@@ -92,6 +92,9 @@
             <input type="file" name="buktis" id="buktis" accept="image/*">
             <input type="hidden" id="buktisEnc" name="buktisEnc">
             <!-- This is an image element with an empty src and alt attribute -->
+            <input type="submit" value="Simpan Data">
+        </form>
+    </div>
             <script>
 document.getElementById('buktis').addEventListener('change', function(event) {
                 var file = event.target.files[0];
@@ -102,8 +105,5 @@ document.getElementById('buktis').addEventListener('change', function(event) {
                 reader.readAsDataURL(file);
                });
 </script>
-            <input type="submit" value="Simpan Data">
-        </form>
-    </div>
 </body>
 </html>
